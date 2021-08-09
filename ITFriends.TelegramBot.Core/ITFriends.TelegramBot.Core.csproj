@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MassTransit" Version="7.1.4" />
+      <PackageReference Include="Telegram.Bot" Version="15.7.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ITFriends.Infrastructure.Configuration\ITFriends.Infrastructure.Configuration.csproj" />
+      <ProjectReference Include="..\ITFriends.Infrastructure.SeedWork\ITFriends.Infrastructure.SeedWork.csproj" />
+    </ItemGroup>
+
+</Project>

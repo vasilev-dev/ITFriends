@@ -1,0 +1,53 @@
+version: '3.4'
+
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    hostname: myrabbit
+    ports:
+      - 5672:5672
+      - 15672:15672
+
+  mssql:
+    image: mcr.microsoft.com/mssql/server
+    hostname: sqlserver
+    ports:
+      - 1433:1433
+    environment:
+      - SA_PASSWORD=Password1!
+      - ACCEPT_EULA=Y
+
+  mongodb:
+    image: mongo
+    restart: always
+    ports:
+      - 27018:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
+
+  ngrok:
+    image: wernight/ngrok
+    ports:
+      - 4040:4040
+    environment:
+      NGROK_AUTH: 1qNoELDNqCrvTHa8B7N3kdu1vw8_5jzpUhYCT6z6zDYg2BMAm
+      NGROK_PORT: 8443
+    
+  itfriends.identity.api:
+    image: ${DOCKER_REGISTRY-}itfriendsidentityapi
+    build:
+      context: .
+      dockerfile: ITFriends.Identity.Api/Dockerfile
+
+  itfriends.identity.identityserver:
+    image: ${DOCKER_REGISTRY-}itfriendsidentityidentityserver
+    build:
+      context: .
+      dockerfile: ITFriends.Identity.IdentityServer/Dockerfile
+
+  itfriends.notifier.api:
+    image: ${DOCKER_REGISTRY-}itfriendsnotifierapi
+    build:
+      context: .
+      dockerfile: ITFriends.Notifier.Api/Dockerfile

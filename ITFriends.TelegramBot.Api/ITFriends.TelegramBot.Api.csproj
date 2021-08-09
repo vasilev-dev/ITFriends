@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <UserSecretsId>982edb0b-adc6-4c4e-a849-47516264364c</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Autofac" Version="6.1.0" />
+      <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.1.0" />
+      <PackageReference Include="AutoMapper.Contrib.Autofac.DependencyInjection" Version="5.3.0" />
+      <PackageReference Include="IdentityServer4.AccessTokenValidation" Version="3.0.1" />
+      <PackageReference Include="MassTransit.AspNetCore" Version="7.1.4" />
+      <PackageReference Include="MassTransit.Autofac" Version="7.1.7" />
+      <PackageReference Include="MassTransit.RabbitMQ" Version="7.1.7" />
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.0.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="5.0.4" />
+      <PackageReference Include="Serilog" Version="2.10.0" />
+      <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
+      <PackageReference Include="Serilog.Sinks.File" Version="4.1.0" />
+      <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.1.1" />
+      <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.1.1" />
+      <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.1.1" />
+      <PackageReference Include="Telegram.Bot" Version="15.7.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ITFriends.Infrastructure.Configuration\ITFriends.Infrastructure.Configuration.csproj" />
+      <ProjectReference Include="..\ITFriends.Infrastructure.SeedWork\ITFriends.Infrastructure.SeedWork.csproj" />
+      <ProjectReference Include="..\ITFriends.TelegramBot.Core\ITFriends.TelegramBot.Core.csproj" />
+    </ItemGroup>
+
+</Project>

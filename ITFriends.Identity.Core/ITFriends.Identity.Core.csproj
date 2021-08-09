@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <LangVersion>default</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FluentValidation" Version="9.4.0" />
+      <PackageReference Include="IdentityModel" Version="5.0.0" />
+      <PackageReference Include="MassTransit" Version="7.1.4" />
+      <PackageReference Include="MediatR" Version="9.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="5.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ITFriends.Identity.Data.Read\ITFriends.Identity.Data.Read.csproj" />
+      <ProjectReference Include="..\ITFriends.Infrastructure.Domain.Common\ITFriends.Infrastructure.Domain.Common.csproj" />
+      <ProjectReference Include="..\ITFriends.Infrastructure.Domain.Write\ITFriends.Infrastructure.Domain.Write.csproj" />
+      <ProjectReference Include="..\ITFriends.Infrastructure.SeedWork\ITFriends.Infrastructure.SeedWork.csproj" />
+    </ItemGroup>
+
+</Project>

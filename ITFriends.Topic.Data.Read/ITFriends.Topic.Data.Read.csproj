@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ITFriends.Infrastructure.Domain.Common\ITFriends.Infrastructure.Domain.Common.csproj" />
+      <ProjectReference Include="..\ITFriends.Infrastructure.Domain.Read\ITFriends.Infrastructure.Domain.Read.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AutoMapper" Version="10.1.1" />
+      <PackageReference Include="MongoDB.Driver" Version="2.11.6" />
+    </ItemGroup>
+
+</Project>

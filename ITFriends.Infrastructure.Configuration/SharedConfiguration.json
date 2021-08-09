@@ -1,0 +1,19 @@
+﻿{
+  "ConnectionStrings": {
+    "WriteDbConnectionString": "Server=localhost;Database=it_friends;Trusted_Connection=True;"
+  },
+  "ReadDbConfiguration": {
+    "ConnectionString": "mongodb://localhost:27017",
+    "Database": "itfriendsRead"
+  },
+  "IS4Url": "http://localhost:5000",
+  "ClientUrl": "http://localhost:8080/",
+  "ClientId": "react-client",
+  "RabbitMqConfiguration": {
+    "VHost": "/",
+    "Username": "guest",
+    "Password": "guest",
+    "Host": "localhost",
+    "Port": 5672
+  }
+}
