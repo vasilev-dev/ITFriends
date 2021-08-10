@@ -1,4 +1,4 @@
-# ![ITFriends](docs/logo.jpg) ITFriends
+# ![ITFriends](docs/logo.jpg)
 ***Сontent distribution .NET microservice application using CQRS with multiple databases and Clean Architecture.***
 
 ## :bookmark_tabs: Technology stack
@@ -16,7 +16,7 @@
 
 
 ## 🌁 Application architecture
-![Architecture](docs/architecture.jpg)
+![Architecture](docs/architecture.png)
 
 
 ## 👷 Application pipeline
