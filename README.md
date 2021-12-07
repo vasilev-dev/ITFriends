@@ -7,7 +7,8 @@
 * Database and ORM: **SQL Server + EF Core (for writing), MongoDB + MongoDB Driver (readable)**
 * Identity managment: **Identity server 4**
 * IoC: **Autofac**
-* Event Bus: **MassTransit + RabbitMQ**
+* Message broker: **RabbitMQ**
+* Event Bus: **MassTransit**
 * Task Scheduler: **Hangfire + Redis**
 * Testing: **NUnit + FluentAssertion + Moq**
 * Mapping: **AutoMapper**
